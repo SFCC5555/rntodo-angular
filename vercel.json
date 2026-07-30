@@ -1,5 +1,5 @@
 {
-  "buildCommand": "printf 'export const environment = { production: true, supabaseUrl: \"%s\", supabaseKey: \"%s\" };' \"$SUPABASE_URL\" \"$SUPABASE_KEY\" > src/environments/environment.prod.ts && cp src/environments/environment.prod.ts src/environments/environment.ts && npm run build",
+  "buildCommand": "node scripts/gen-env.js && npm run build",
   "outputDirectory": "dist/rntodo-angular",
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
