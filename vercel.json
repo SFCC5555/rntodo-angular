@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "cp src/environments/environment.prod.ts src/environments/environment.ts && npm run build",
   "outputDirectory": "dist/rntodo-angular",
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
