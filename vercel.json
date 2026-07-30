@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/rntodo-angular",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
